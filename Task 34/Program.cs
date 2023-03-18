@@ -6,7 +6,6 @@
 Console.Write("Введите количество элементов массива: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int[] randomArray = new int[a];
-
 void mas(int a)
 {
     for (int i = 0; i < a; i++)
@@ -14,9 +13,7 @@ void mas(int a)
         randomArray[i] = new Random().Next(99, 999);
         Console.Write(randomArray[i] + " ");
     }
-
 }
-
 int kol(int[] randomArray)
 {
     int kol = 0;
@@ -27,6 +24,5 @@ int kol(int[] randomArray)
     }
     return kol;
 }
-
 mas(a);
-Console.Write($"\nКоличество чётных чисел в массиве: { kol(randomArray)}");
+Console.Write($"\nКоличество чётных чисел в массиве: {kol(randomArray)}");
